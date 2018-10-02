@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <!--   <link 
+ href="bootstrap-3.3.6-dist/css/bootstrap.min.css"
+ rel="stylesheet">
+  -->
+
+    <link rel="stylesheet" href="css/footer.css"> <!-- for footer -->
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootsnav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--  <link rel="stylesheet" type="text/css" href="artCss/styleArtsansar.css">
+  <link rel="stylesheet" type="text/css" href="/style/artistofweek.css">  --><!-- for artistof week css -->
+  <link rel="stylesheet" type="text/css" href="css/artistWeek.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="artCss/styleArtsansar.css"> -->
+<style type="text/css">
+  img {
+    cursor: zoom-in;
+}
+</style>
+</head>
+<body>
+
+ <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <img src="" class="enlargeImageModalSource" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container">
+<h1></h1>
+<div class="jumbotron"><h1>Enlarge Image Modal</h1><h2>D14RAP</h2></div>
+    <p>Click the below images to enlarge them</p>
+
+    <div class="row">
+        <div class="col-md-4"><img style="width:100%; height:auto;" src="images/thumb/assa.jpg"></div>
+        <div class="col-md-4"><img style="width:100%; height:auto;" src="https://placeholdit.imgix.net/~text?txtsize=72&txt=Image%202&w=1920&h=1080"></div>
+        <div class="col-md-4"><img style="width:100%; height:auto;" src="https://placeholdit.imgix.net/~text?txtsize=72&txt=Image%203&w=1920&h=1080"></div>
+    </div>    
+</div>
+
+<script type="text/javascript">
+  $(function() {
+      $('img').on('click', function() {
+      $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+      $('#enlargeImageModal').modal('show');
+    });
+});
+</script>
+</body>
+</html>
